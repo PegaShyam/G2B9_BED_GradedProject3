@@ -155,31 +155,31 @@
 			<div class="row-content">
 				<div class="card-body">
 					<form th:action="@{/tickets/{id}/view (id=${ticket.id})}" th:object="${ticket}" method="GET">
-                        <br>
+                        			<br>
 						<div class="form-group">
 							<label> Title</label>
                             
 							<input type="text" name="Title" th:field="*{title}" class="form-control"
 								placeholder="Enter ticket title" readonly="readonly" />
 						</div>
-                        <br>
+                        			<br>
 						<div class="form-group">
 							<label> Short Description</label>
                             
 							<!-- <input type="text" name="description" th:field="*{description}" class="form-control"
 								placeholder="Enter ticket description" readonly="readonly" /> -->
-                            <textarea name="description" th:field="*{description}" class="form-control txtarea"
-                            placeholder="Enter ticket description" readonly="readonly" ></textarea>    
+                            				<textarea name="description" th:field="*{description}" class="form-control txtarea"
+                            				placeholder="Enter ticket description" readonly="readonly" ></textarea>    
 						</div>
-                        <br>
+                        			<br>
 						<div class="form-group">
 							<label> Content </label>
                             
 							<input type="text" name="content" th:field="*{content}" class="form-control"
 								placeholder="Enter content" readonly="readonly" />
 						</div>
-                        <br>
-                        <br>
+                        			<br>
+                        			<br>
 					</form>
 
 				</div>
