@@ -153,36 +153,36 @@
 			<div class="row-content">
 				<div class="card-body">
 					<form th:action="@{/tickets}" th:object="${ticket}" method="POST">
-                        <br>
+                                                <br>
 						<div class="form-group">
 							<label> Title</label>
                             
 							<input type="text" name="Title" th:field="*{title}" class="form-control"
 								placeholder="Enter ticket title" />
 						</div>
-                        <br>
+                                                <br>
 						<div class="form-group">
 							<label> Short Description</label>
                             
 							<!-- <input type="text" name="description" th:field="*{description}" class="form-control"
 								placeholder="Enter ticket description" /> -->
-                            <textarea name="description" th:field="*{description}" class="form-control txtarea"
-                            placeholder="Enter ticket description"></textarea>    
+                            				<textarea name="description" th:field="*{description}" class="form-control txtarea"
+                            				placeholder="Enter ticket description"></textarea>    
 						</div>
-                        <br>
+                                                <br>
 						<div class="form-group">
 							<label> Content </label>
                             
 							<input type="text" name="content" th:field="*{content}" class="form-control"
 								placeholder="Enter content" />
 						</div>
-                        <br>
+                                                <br>
 						<div class="box-footer">
 							<button type="submit" class="btn1">
 								Submit
 							</button>
 						</div>
-                        <br>
+                                                <br>
 					</form>
 
 				</div>
